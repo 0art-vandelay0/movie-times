@@ -82,5 +82,7 @@ window.addEventListener("load", function() {
         let price = ticket.calculatePrice();
 
         moviesOutput.append("Ticket Price: $" + price);
+
+        document.getElementById("movies").removeAttribute("class");
     };
 });
