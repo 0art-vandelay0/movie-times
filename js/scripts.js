@@ -28,9 +28,9 @@ Ticket.prototype.calculatePrice = function() {
         this.showtime === "12p" ||
         this.movie.type === "re-release"
     ) {
-        return "$8";
+        return "8";
     } else {
-        return "$10";
+        return "10";
     }
 };
 
