@@ -54,3 +54,13 @@ tickets;
 Tickets {movies: Array(1)}
 movies: [Movie]
 [[Prototype]]: Object
+
+### **Describe Ticket()**
+
+#### **_Test:_**
+
+"It will "
+
+#### **_Code:_**
+
+#### **_Expected Output:_**
