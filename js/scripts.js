@@ -3,9 +3,10 @@ function Tickets() {
     this.movies = [];
 }
 
-function Movie(name, showtime, ageRestrict) {
+function Movie(name, showtime, type, ageRestrict) {
     this.name = name;
     this.showtime = showtime;
+    this.type = type;
     this.ageRestrict = ageRestrict;
 }
 
@@ -13,11 +14,31 @@ Tickets.prototype.addMovie = function(movie) {
     this.movies.push(movie);
 };
 
+function Ticket(movie, showtime, ageRestrict) {
+    this.movie = movie;
+    this.showtime = showtime;
+    this.ageRestrict = ageRestrict;
+}
+
+Ticket.prototype.calculatePrice = function() {
+    if (
+        this.ageRestrict >= 60 ||
+        this.showtime === "1p" ||
+        this.showtime === "2p" ||
+        this.showtime === "12p" ||
+        this.movie.type === "re-release"
+    ) {
+        return "$8";
+    } else {
+        return "$10";
+    }
+};
+
 let tickets = new Tickets();
 
-let movie1 = new Movie("Guardians of the Galaxy", ["12p", "6p"], 17);
-let movie2 = new Movie("The Avengers", ["1p", "4p", "7p"], 13);
-let movie3 = new Movie("The Incredibles", ["2p", "5p", "8p"], 0);
+let movie1 = new Movie("Guardians of the Galaxy", ["12p", "6p"], "regular", 17);
+let movie2 = new Movie("The Avengers", ["1p", "4p", "7p"], "regular", 13);
+let movie3 = new Movie("The Incredibles", ["2p", "5p", "8p"], "re-release", 0);
 
 tickets.addMovie(movie1);
 tickets.addMovie(movie2);
