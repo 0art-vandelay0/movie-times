@@ -22,11 +22,7 @@ function Ticket(movie, showtime, ageRestrict) {
 
 Ticket.prototype.calculatePrice = function() {
     if (
-        this.ageRestrict >= 60 ||
-        this.showtime === "1p" ||
-        this.showtime === "2p" ||
-        this.showtime === "12p" ||
-        this.movie.type === "re-release"
+        this.ageRestrict >= 60 || this.showtime === "1p" || this.showtime === "2p" || this.showtime === "12p" || this.movie.type === "re-release"
     ) {
         return "8";
     } else {
