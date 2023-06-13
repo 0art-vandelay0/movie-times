@@ -1,15 +1,24 @@
 ## Unit Tests
 
-### Describe Movie()
+### **Describe Movie()**
 
-Test: "It will create a movie object wiht name, showtime, and age restriction as properties"
-Code:
+#### Test:
+
+"It will create a movie object wiht name, showtime, and age restriction as properties"
+
+#### Code:
+
 let movie1 = new Movie("Guardians of the Glaxay", ["12p", "6p"], 17);
 movie1;
-Expected Results:
-Movie {name: 'Guardians of the Glaxay', showtime: Array(2) ["12p", "6p"], ageRestrict: 17}
 
-### Describe Tickets()
+#### Expected Results:
+
+Movie {name: 'Guardians of the Glaxay', showtime: Array(2) ["12p", "6p"], ageRestrict: 17}
+<br>
+<br>
+<br>
+
+### **Describe Tickets()**
 
 #### Test:
 
@@ -23,8 +32,11 @@ tickets;
 #### Expected Output:
 
 Tickets {movies: Array(0)}
+<br>
+<br>
+<br>
 
-### Describe addMovie()
+### **Describe addMovie()**
 
 #### Test:
 
@@ -32,9 +44,9 @@ Tickets {movies: Array(0)}
 
 #### Code:
 
-let tickets = new Ticket()
+let tickets = new Ticket();<br>
 let movie2 = new Movie("The Avengers", ["1p", "4p", "7p"], 13);
-tickets.addMovie(movie2)
+tickets.addMovie(movie2);
 tickets;
 
 #### Expected Output:
