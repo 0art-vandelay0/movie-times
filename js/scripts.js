@@ -76,11 +76,11 @@ window.addEventListener("load", function() {
 
         let ticket = new Ticket(movieSelection.name, showtime, ageRestrict);
 
-        let moviesOutput = document.getElementById("moviesOutput");
+        let moviesOutput = document.getElementById("ticket-price");
         moviesOutput.innerHTML = "";
 
         let price = ticket.calculatePrice();
 
-        alert("Ticket Price: $" + price);
+        moviesOutput.append("Ticket Price: $" + price);
     };
 });
