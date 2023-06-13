@@ -4,7 +4,7 @@
 
 #### **_Test:_**
 
-"It will create a movie object wiht name, showtime, and age restriction as properties"
+"It will create a movie object with 'name', 'showtime', and 'age restriction' as properties"
 
 #### **_Code:_**
 
