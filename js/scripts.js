@@ -67,5 +67,3 @@ window.addEventListener("load", function() {
         alert("Ticket Price: $" + price);
     };
 });
-
-console.log(Movie(movie1))

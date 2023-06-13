@@ -13,13 +13,32 @@ Movie {name: 'Guardians of the Glaxay', showtime: Array(2) ["12p", "6p"], ageRe
 
 #### Test:
 
-"It will create a Tickets object that holds and empty array of Movies object(s)."
+"It will create a Ticket object that holds and empty array of Movies object(s)."
 
 #### Code:
 
 let ticket = new Ticket();
-tickets
+tickets;
 
 #### Expected Output:
 
 Tickets {movies: Array(0)}
+
+### Describe addMovie()
+
+#### Test:
+
+"It will store a Movie object when created and called."
+
+#### Code:
+
+let tickets = new Ticket()
+let movie2 = new Movie("The Avengers", ["1p", "4p", "7p"], 13);
+tickets.addMovie(movie2)
+tickets;
+
+#### Expected Output:
+
+Tickets {movies: Array(1)}
+movies: [Movie]
+[[Prototype]]: Object
